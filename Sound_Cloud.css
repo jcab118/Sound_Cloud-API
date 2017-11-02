@@ -1,0 +1,27 @@
+#heading{text-align: center;
+	color:teal;
+}
+body {
+      animation:colorchange 1s infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 10s infinite; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: grey;}
+      25%  {background: silver;}
+      50%  {background: #4eb1ba;}
+      75%  {background: slategrey;}
+      100% {background: darkslategrey;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: grey;}
+      25%  {background: silver;}
+      50%  {background: #4eb1ba;}
+      75%  {background: slategrey;}
+      100% {background: darkslategrey;}
+    }
+    
